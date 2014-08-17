@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@import 'normalize';
+
+@import 'bourbon';
+@import 'base/grid-settings';
+@import 'neat';
+@import 'base/base';
+
+.container {
+	width: 100%;
+	max-width: 100%;
+	padding: 0 20px;
+}
+.text-center {
+	text-align: center;
+}
