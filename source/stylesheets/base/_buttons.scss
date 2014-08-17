@@ -11,6 +11,7 @@
   font-size: $base-font-size;
   font-weight: bold;
   text-decoration: none;
+  margin: 0;
   @include button-size;
   @include button-function;
   @include transition(background-color 0.2s ease-in-out 0s);
