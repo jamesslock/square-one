@@ -80,3 +80,28 @@
   display: inline-block;
   vertical-align: top;
 }
+
+// Button group
+.btn--group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+
+  .btn {
+    display: inline-block;
+    float: left;
+  }
+  .btn:first-child:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .btn:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+}
+
+
