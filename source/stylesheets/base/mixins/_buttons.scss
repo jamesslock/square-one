@@ -1,0 +1,35 @@
+// Button sizes
+@mixin button-size($size: 1rem) {
+  padding: 0 $size*1.5;
+  line-height: $size*3;
+  height: $size*3;
+
+  .btn__icon {
+    font-size: $size*2;
+    height: $size*3;
+    margin-left: -$size;
+    margin-right: -$size;
+  }
+  .btn__icon--left {
+    margin-right: 0;
+    margin-left: -$size*1.1;
+  }
+  .btn__icon--right {
+    margin-left: 0;
+    margin-right: -$size*1.1;
+  }
+}
+
+@mixin button-function($background-color: $button-default, $color: $button-color) {
+  background-color: $background-color;
+  color: $color;
+
+  &:hover {
+    background-color: darken($background-color, 10%);
+    color: $color;
+  }
+  &:active, &:focus {
+    background-color: darken($background-color, 15%);
+    color: $color;
+  }
+}
