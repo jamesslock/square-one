@@ -589,6 +589,7 @@ dl {
   font-size: 1em;
   font-weight: bold;
   text-decoration: none;
+  margin: 0;
   padding: 0 1.5rem;
   line-height: 3rem;
   height: 3rem;
@@ -619,8 +620,11 @@ dl {
   .btn:active, .btn:focus {
     background-color: #a1aaaf;
     color: white; }
+  /* line 36, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/mixins/_buttons.scss */
+  .btn.btn--active {
+    background-color: #a1aaaf; }
 
-/* line 20, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+/* line 21, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
 .btn--small {
   padding: 0 1.05rem;
   line-height: 2.1rem;
@@ -640,7 +644,7 @@ dl {
     margin-left: 0;
     margin-right: -0.77rem; }
 
-/* line 23, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+/* line 24, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
 .btn--large {
   padding: 0 1.95rem;
   line-height: 3.9rem;
@@ -660,7 +664,7 @@ dl {
     margin-left: 0;
     margin-right: -1.43rem; }
 
-/* line 26, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+/* line 27, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
 .btn--huge {
   padding: 0 2.4rem;
   line-height: 4.8rem;
@@ -680,14 +684,14 @@ dl {
     margin-left: 0;
     margin-right: -1.76rem; }
 
-/* line 29, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+/* line 30, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
 .btn--full {
   width: 100%;
   text-align: center;
   padding-left: 0;
   padding-right: 0; }
 
-/* line 37, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+/* line 38, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
 .btn--primary {
   background-color: #58d68d;
   color: white; }
@@ -699,8 +703,11 @@ dl {
   .btn--primary:active, .btn--primary:focus {
     background-color: #2cb566;
     color: white; }
+  /* line 36, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/mixins/_buttons.scss */
+  .btn--primary.btn--active {
+    background-color: #2cb566; }
 
-/* line 40, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+/* line 41, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
 .btn--secondary {
   background-color: #5dade2;
   color: white; }
@@ -712,8 +719,11 @@ dl {
   .btn--secondary:active, .btn--secondary:focus {
     background-color: #258ace;
     color: white; }
+  /* line 36, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/mixins/_buttons.scss */
+  .btn--secondary.btn--active {
+    background-color: #258ace; }
 
-/* line 43, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+/* line 44, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
 .btn--tertiary {
   background-color: #415b76;
   color: white; }
@@ -725,8 +735,11 @@ dl {
   .btn--tertiary:active, .btn--tertiary:focus {
     background-color: #263545;
     color: white; }
+  /* line 36, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/mixins/_buttons.scss */
+  .btn--tertiary.btn--active {
+    background-color: #263545; }
 
-/* line 46, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+/* line 47, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
 .btn--warning {
   background-color: #f5d313;
   color: white; }
@@ -738,8 +751,11 @@ dl {
   .btn--warning:active, .btn--warning:focus {
     background-color: #b49a08;
     color: white; }
+  /* line 36, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/mixins/_buttons.scss */
+  .btn--warning.btn--active {
+    background-color: #b49a08; }
 
-/* line 49, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+/* line 50, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
 .btn--danger {
   background-color: red;
   color: white; }
@@ -751,22 +767,41 @@ dl {
   .btn--danger:active, .btn--danger:focus {
     background-color: #b30000;
     color: white; }
+  /* line 36, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/mixins/_buttons.scss */
+  .btn--danger.btn--active {
+    background-color: #b30000; }
 
-/* line 52, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+/* line 53, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
 .btn--inactive,
 .btn--inactive:hover {
   background: #dddddd;
   cursor: default; }
 
-/* line 59, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+/* line 58, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+.btn--empty {
+  background-color: transparent;
+  color: #333333; }
+  /* line 27, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/mixins/_buttons.scss */
+  .btn--empty:hover {
+    background-color: transparent;
+    color: #333333; }
+  /* line 31, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/mixins/_buttons.scss */
+  .btn--empty:active, .btn--empty:focus {
+    background-color: transparent;
+    color: #333333; }
+  /* line 36, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/mixins/_buttons.scss */
+  .btn--empty.btn--active {
+    background-color: transparent; }
+
+/* line 63, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
 .btn--soft {
   border-radius: 5rem; }
 
-/* line 62, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+/* line 66, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
 .btn--hard {
   border-radius: 0; }
 
-/* line 65, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+/* line 69, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
 .btn--natural {
   vertical-align: baseline;
   font-size: inherit;
@@ -775,10 +810,31 @@ dl {
   padding-right: .5rem;
   padding-left: .5rem; }
 
-/* line 75, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+/* line 79, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
 .btn__icon {
   display: inline-block;
   vertical-align: top; }
+
+/* line 85, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+.btn--group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle; }
+  /* line 90, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+  .btn--group .btn {
+    display: inline-block;
+    float: left; }
+  /* line 94, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+  .btn--group .btn:first-child:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  /* line 98, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+  .btn--group .btn:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  /* line 102, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/base/_buttons.scss */
+  .btn--group .btn:not(:first-child):not(:last-child) {
+    border-radius: 0; }
 
 @font-face {
   font-family: 'icons';
@@ -2035,7 +2091,7 @@ dl {
 .container {
   width: 100%;
   max-width: 100%;
-  padding: 0 20px; }
+  padding: 20px; }
 
 /* line 15, /Users/James/code/middleman-bourbon-neat-template/source/stylesheets/all.scss */
 .text-center {
